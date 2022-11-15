@@ -70,7 +70,7 @@ L.tileLayer('https://api.maptiler.com/maps/basic-v2/{z}/{x}/{y}.png?key=SwkzvKcA
 }).addTo(map);
 
 var myIcon = L.icon({
-    iconUrl: '../images/icon-location.svg',
+    iconUrl: 'icon-location.svg',
     iconSize: [46, 56],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76],
