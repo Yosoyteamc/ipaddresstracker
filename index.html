@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="assets/css/vendor/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" /></head>
+<body>
+  <main class="container">
+    <div class="search-app">
+      <h1 class="search-app__title">IP Address Tracker</h1>
+      <form class="search-app-form">
+        <input class= "search-app-form__input" required type="text" placeholder="Search for any IP address or domain">
+        <button class="search-app-form__button" type="submit"><img src="assets/images/icon-arrow.svg" alt="icon"></button>
+      </form>
+    </div>
+    <div class="card-app">
+        <div class="card-app__title">IP Address <span class="card-app__result" data-ip>192.212.174.102</span></div>
+        <div class="card-app__title">Location   <span class="card-app__result" data-location>Brooklyn, NY 10001</span></div>
+        <div class="card-app__title">Timezone   <span class="card-app__result" data-timezone>UTC-0500</span></div>
+        <div class="card-app__title">ISP        <span class="card-app__result" data-isp>SpaceX Starlink</span></div>
+    </div>
+    <div class="map map-app" id="map">
+      <!-- add offset value dynamically using the API -->
+    </div>
+  </main>  
+  <footer class="attribution">
+    Challenge by <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.  
+    Coded by <a rel="noopener" href="https://www.linkedin.com/in/juanmosquera98/" target="_blank">Juan Mosquera</a>.  
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.2/leaflet.js" integrity="sha512-KMraOVM0qMVE0U1OULTpYO4gg5MZgazwPAPyMQWfOkEshpwlLQFCHZ/0lBXyviDNVL+pBGwmeXQnuvGK8Fscvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
